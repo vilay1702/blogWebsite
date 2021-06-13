@@ -107,11 +107,18 @@ main {
 #toTop {
   z-index: 10;
   position: fixed;
-  right: 20px;
+  left: 0px;
   bottom: 20px;
-  font-size: 38px;
-  color: #64f5ff;
   transition: var(--transition);
+  font-size: 24px;
+  color: #000000;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffffb2;
+  border-radius: 0px 50% 50% 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* =========================== Blogs ============================ */
@@ -174,7 +181,7 @@ main {
     display: flex;
     flex-direction: column;
   }
-  .blog:nth-child(odd) img {
-    order: 2;
+  .blog img {
+    order: 1;
   }
 }
