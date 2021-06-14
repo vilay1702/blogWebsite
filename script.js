@@ -4,7 +4,14 @@ AOS.init({
   duration: 500,
 });
 
-let cardImage = document.getElementsByClassName("cardImg");
-for (let i = 0; i < cardImage.length; i++) {
-  cardImage[i].textContent = "Event Image";
+// Read More Button
+function readMore(e) {
+  if (e.innerHTML == "Read More") {
+    e.innerHTML = "Read Less";
+  } else {
+    e.innerHTML = "Read More";
+  }
+  e.parentElement.classList.toggle("readMore");
 }
+
+let x = document.getElementById("searchBar");
