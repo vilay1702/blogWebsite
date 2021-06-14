@@ -19,11 +19,11 @@ logo.addEventListener("click", () => {
 
 // Read More Button
 function readMore(e) {
-  if (e.innerHTML == "Read More") {
-    e.innerHTML = "Read Less";
-  } else {
-    e.innerHTML = "Read More";
-  }
+  // if (e.innerHTML == "Read More") {
+  //   e.innerHTML = "Read Less";
+  // } else {
+  //   e.innerHTML = "Read More";
+  // }
   e.parentElement.classList.toggle("readMore");
 }
 
