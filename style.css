@@ -47,28 +47,28 @@ body {
 
 .lightTheme header nav {
   background-color: var(--white);
-  background: linear-gradient(to bottom, #6dd5ed, #2193b0);
-  box-shadow: 0px 2px 8px 2px var(--black);
+  background: linear-gradient(to bottom, #016277, #01232c);
+  box-shadow: 0px 2px 8px 2px #363636;
 }
 
 .lightTheme header nav #logo {
-  background-color: var(--black);
-  color: #ffffff;
+  background-color: var(--white);
+  color: var(--black);
   box-shadow: 3px 3px 5px 0px #1b1b1b;
 }
 
 .lightTheme header nav .navList li .navLink {
-  color: var(--black);
+  color: var(--white);
 }
 
 .lightTheme header nav .navList li .navLink:hover {
-  background-color: #ffffff91;
+  background-color: #16161691;
 }
 
 .lightTheme header nav #searchBar {
-  color: #ffffff;
-  background-color: var(--black);
-  box-shadow: 2px 1px 5px 1px #1b1b1b, -2px -1px 5px 1px #e0e0e0;
+  color: var(--black);
+  background-color: var(--white);
+  box-shadow: 2px 1px 5px 1px #000000, -2px -1px 5px 1px #929292;
 }
 
 .lightTheme main section .blog {
@@ -90,28 +90,28 @@ body {
 
 .darkTheme header nav {
   background-color: var(--white);
-  background: linear-gradient(to bottom, #016277, #01232c);
-  box-shadow: 0px 2px 8px 2px #5a5a5a;
+  background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+  box-shadow: 0px 2px 8px 2px #575757;
 }
 
 .darkTheme header nav #logo {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--black);
+  color: #ffffff;
   box-shadow: 3px 3px 5px 0px #1b1b1b;
 }
 
 .darkTheme header nav .navList li .navLink {
-  color: var(--white);
+  color: var(--black);
 }
 
 .darkTheme header nav .navList li .navLink:hover {
-  background-color: #16161691;
+  background-color: #ffffff91;
 }
 
 .darkTheme header nav #searchBar {
-  color: var(--black);
-  background-color: var(--white);
-  box-shadow: 2px 1px 5px 1px #000000, -2px -1px 5px 1px #929292;
+  color: #ffffff;
+  background-color: var(--black);
+  box-shadow: 2px 1px 5px 1px #1b1b1b, -2px -1px 5px 1px #e0e0e0;
 }
 
 .darkTheme main section .blog {
