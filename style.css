@@ -28,9 +28,106 @@ a {
 
 body {
   font-family: var(--font1);
-  background: linear-gradient(to right, #363636, #141414);
+  transition: all 0.3s ease;
+
   /* background-color: #30221c; */
 }
+
+/* ========================== Light Theme ========================== */
+.lightTheme {
+  /* background: linear-gradient(to right, #e9e9e9, #c8edf8); */
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.lightTheme #toTop {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.lightTheme header nav {
+  background-color: var(--white);
+  background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+  box-shadow: 0px 2px 8px 2px var(--black);
+}
+
+.lightTheme header nav #logo {
+  background-color: var(--black);
+  color: #ffffff;
+  box-shadow: 3px 3px 5px 0px #1b1b1b;
+}
+
+.lightTheme header nav .navList li .navLink {
+  color: var(--black);
+}
+
+.lightTheme header nav .navList li .navLink:hover {
+  background-color: #ffffff91;
+}
+
+.lightTheme header nav #searchBar {
+  color: #ffffff;
+  background-color: var(--black);
+  box-shadow: 2px 1px 5px 1px #1b1b1b, -2px -1px 5px 1px #e0e0e0;
+}
+
+.lightTheme main section .blog {
+  background-color: #9ad7fa;
+  box-shadow: 0px 2px 10px 2px var(--black);
+}
+
+.lightTheme main section .blog article {
+  background-color: #ffffff81;
+}
+
+/* ========================== Light Theme End ========================== */
+
+/* ========================== Dark Theme ========================== */
+.darkTheme {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.darkTheme header nav {
+  background-color: var(--white);
+  background: linear-gradient(to bottom, #016277, #01232c);
+  box-shadow: 0px 2px 8px 2px #5a5a5a;
+}
+
+.darkTheme header nav #logo {
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 3px 3px 5px 0px #1b1b1b;
+}
+
+.darkTheme header nav .navList li .navLink {
+  color: var(--white);
+}
+
+.darkTheme header nav .navList li .navLink:hover {
+  background-color: #16161691;
+}
+
+.darkTheme header nav #searchBar {
+  color: var(--black);
+  background-color: var(--white);
+  box-shadow: 2px 1px 5px 1px #000000, -2px -1px 5px 1px #929292;
+}
+
+.darkTheme main section .blog {
+  background-color: #08293b;
+  box-shadow: 0px 2px 10px 2px var(--black);
+}
+
+.darkTheme main section .blog img {
+  border: 1px solid var(--white);
+}
+
+.darkTheme main section .blog article {
+  background-color: #44444481;
+}
+
+/* ========================== Dark Theme End ========================== */
 
 /* ===================== Navigation ===================== */
 
@@ -41,19 +138,15 @@ header {
 }
 
 nav {
-  background-color: var(--white);
-  background: linear-gradient(to bottom, #6dd5ed, #2193b0);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em 5vw;
-  box-shadow: 0px 2px 8px 2px var(--black);
 }
 
 #logo {
   display: flex;
   font-size: var(--fontM);
-  background-color: var(--black);
   padding: 0.5em;
   border: 0px solid transparent;
   justify-content: center;
@@ -63,8 +156,6 @@ nav {
   font-family: "Lobster Two", cursive;
   text-decoration: none;
   font-weight: bold;
-  color: #ffffff;
-  box-shadow: 3px 3px 5px 0px #1b1b1b;
 }
 
 .navList {
@@ -77,24 +168,19 @@ nav {
 .navLink {
   padding: 0em 0.5em;
   /* background-color: #1b1b1b; */
-  color: var(--black);
   border-radius: 1em;
 }
 
 .navLink:hover {
-  background-color: #ffffff91;
   transition: all 0.6s ease-in-out;
 }
 
-#searchBar input,
-#searchBar button {
+#searchBar {
   font-size: var(--fontS);
   padding: 1em;
-}
-#searchBar button {
-  background-color: var(--black);
-  color: #ffffff;
-  border: 2px solid #444444;
+  /* border: 2px solid #444444; */
+  border: 0px solid transparent;
+  border-radius: 50px;
 }
 
 /* ========================== Main ========================= */
@@ -127,14 +213,10 @@ main {
   width: 80vw;
   margin: 2em auto;
   padding: 10px;
-  background-color: #ffffff5e;
-
   display: grid;
   grid-template-columns: 1fr 2fr;
   /* grid-auto-rows: 20em; */
   gap: 1em;
-
-  box-shadow: 0px 2px 10px 2px var(--black);
 }
 
 .blog img {
@@ -145,7 +227,6 @@ main {
 }
 
 .blog article {
-  background-color: #ffffff81;
   padding: 1em;
 }
 
