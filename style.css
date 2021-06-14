@@ -202,9 +202,10 @@ main {
   .blog {
     display: flex;
     flex-direction: column;
+    width: 90vw;
   }
-  .blog img {
-    order: 1;
+  .blog article {
+    order: 2;
   }
 }
 
