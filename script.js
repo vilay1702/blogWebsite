@@ -27,15 +27,19 @@ function readMore(e) {
   e.parentElement.classList.toggle("readMore");
 }
 
-function searchBlog(e) {
-  Array.from(items).forEach((item) => {
+// Search Blogs
+let blogs = document.getElementsByClassName("blogs");
+let searchBar = document.getElementById("searchBar");
+function searchBlogs(e) {
+  Array.from(blogs).forEach((blog) => {
     if (
-      item.textContent.toLowerCase().indexOf(searchBar.value.toLowerCase()) !=
-      -1
+      blog.childNodes[3].firstElementChild.textContent
+        .toLowerCase()
+        .indexOf(searchBar.value.toLowerCase()) != -1
     ) {
-      item.style.display = "flex";
+      blog.style.display = "grid";
     } else {
-      item.style.display = "none";
+      blog.style.display = "none";
     }
   });
 }
